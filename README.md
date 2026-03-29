@@ -1,17 +1,19 @@
-﻿[![Npmjs](https://img.shields.io/npm/v/pteroly)](https://www.npmjs.com/package/pteroly)
-[![GitHub](https://img.shields.io/github/license/FyreBlitz/pteroly)](https://github.com/FyreBlitz/pteroly/blob/main/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/FyreBlitz/pteroly)](https://github.com/FyreBlitz/pteroly/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/FyreBlitz/pteroly)](https://github.com/FyreBlitz/pteroly/pulls)
-[![Build](https://github.com/FyreBlitz/pteroly/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/FyreBlitz/pteroly/actions/workflows/node.js.yml)
+> [!IMPORTANT]
+> This project hasn't been maintained for 3 years, now. There is no garuantee it still works with recent versions of Pterodactyl.
+> I will not be providing support for this project any longer.
+ 
+ [![Npmjs](https://img.shields.io/npm/v/pteroly)](https://www.npmjs.com/package/pteroly)
+[![GitHub](https://img.shields.io/github/license/numbereddev/pteroly)](https://github.com/numbereddev/pteroly/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/numbereddev/pteroly)](https://github.com/numbereddev/pteroly/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/numbereddev/pteroly)](https://github.com/numbereddev/pteroly/pulls)
+[![Build](https://github.com/numbereddev/pteroly/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/numbereddev/pteroly/actions/workflows/node.js.yml)
 
 # Pteroly
 A high-speed API wrapper for pterodactyl which can easily utilize the latest API of the panel and with amazing customizability, update-checker, support in the Discord, and very fast caching.
 Caching (when enabled) speeds up speed by 98.49% on average.
 
-[Pteroly Documentation](https://pteroly.fyreblitz.com/)
+[Pteroly Documentation](https://pteroly.numbered.dev/)
 | [NpmJS Package](https://www.npmjs.com/package/pteroly/)
-| [Pteroly PayPal](https://paypal.me/PureNodes)
-| [Pteroly Discord](https://discord.gg/8dUwGewqfv)
 
 <u>Benefits of Pteroly:</u>
  - [x] Extremely fast
