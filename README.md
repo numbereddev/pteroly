@@ -31,35 +31,39 @@ First install the package to your Node.JS app/project:
 
 Then you require the package and login into the Pterodactyl API:
 
-    const pteroly = require('pteroly');
-    const admin = pteroly.Admin;
-    const client = pteroly.Client;
-    
-    // You only need to login once in your entire app/project
-    admin.login('HOST_PANEL_URL', 'YOUR_ADMIN_API_KEY', (loggedIn, errorMsg) => {
-	    console.log('Login status Admin: ' + loggedIn);
-	    if (!loggedIn) console.error(errorMsg);
-    });
+```js
+const pteroly = require('pteroly');
+const admin = pteroly.Admin;
+const client = pteroly.Client;
 
-    client.login('HOST_PANEL_URL', 'YOUR_CLIENT_API_KEY', (loggedIn, errorMsg) => {
-	    console.log('Login status Client: ' + loggedIn);
-	    if (!loggedIn) console.error(errorMsg);
-    });
-   And then you can call any function you want like this, to find all the functions of the panel consider visiting our [documentation](https://pteroly.fyreblitz.com/).
+// You only need to login once in your entire app/project
+admin.login('HOST_PANEL_URL', 'YOUR_ADMIN_API_KEY', (loggedIn, errorMsg) => {
+    console.log('Login status Admin: ' + loggedIn);
+    if (!loggedIn) console.error(errorMsg);
+});
+
+client.login('HOST_PANEL_URL', 'YOUR_CLIENT_API_KEY', (loggedIn, errorMsg) => {
+    console.log('Login status Client: ' + loggedIn);
+    if (!loggedIn) console.error(errorMsg);
+});
+```
+
+And then you can call any function you want like this, to find all the functions of the panel consider visiting our [documentation](https://pteroly.numbered.dev/).
    
+```js
+// As a .then function
+admin.functionName(/*arguments*/).then((response) => {
+    // TODO: Insert your code here.
+}).catch((err) => console.error(err));
 
-    // As a .then function
-    admin.functionName(<ARGUMENTS>).then((response) => {
-        // TODO: Insert your code here.
-    }).catch((err) => console.error(err));
+client.functionName(/*arguments*/).then((response) => {
+    // TODO: Insert your code here.
+}).catch((err) => console.error(err));
 
-    client.functionName(<ARGUMENTS>).then((response) => {
-        // TODO: Insert your code here.
-    }).catch((err) => console.error(err));
-    
-    // With await
-    const resultAdmin = await admin.functionName(<ARGUMENTS>).catch((err) => console.error(err));
-    const resultClient = await client.functionName(<ARGUMENTS>).catch((err) => console.error(err));
+// With await
+const resultAdmin = await admin.functionName(/*arguments*/).catch((err) => console.error(err));
+const resultClient = await client.functionName(/*arguments*/).catch((err) => console.error(err));
+```
 
 # Changelog
 Version 1.10.1:
